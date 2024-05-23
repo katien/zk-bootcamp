@@ -1966,6 +1966,11 @@ p-locate@^5.0.0:
   dependencies:
     p-limit "^3.0.2"
 
+pako@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/pako/-/pako-2.1.0.tgz#266cc37f98c7d883545d11335c00fbd4062c9a86"
+  integrity sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==
+
 parent-module@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/parent-module/-/parent-module-1.0.1.tgz#691d2709e78c79fae3a156622452d00762caaaa2"
@@ -2733,3 +2738,10 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zokrates-js@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/zokrates-js/-/zokrates-js-1.1.9.tgz#b19de2f81b0acbeb4ace21ba4e8975a54d36daab"
+  integrity sha512-Z5GyrSkV2SzeB/Im2jV6z4LokRAY+G4O8U81zdgjHpgm62p1XLEfiCjkAIrkHDLGij/EH/ETlHpZtoRYYoSp7g==
+  dependencies:
+    pako "^2.1.0"
