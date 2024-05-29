@@ -1,0 +1,13 @@
+{
+  "hash": 7916021312541562945,
+  "backend": "acvm-backend-barretenberg",
+  "abi": {
+    "parameters": [
+      { "name": "x", "type": { "kind": "field" }, "visibility": "private" }
+    ],
+    "param_witnesses": { "x": [1] },
+    "return_type": null,
+    "return_witnesses": []
+  },
+  "bytecode": "H4sIAAAAAAAA/6XOwQ2AMAwDwGajpEmo82MVKtL9R0BIVEgVP+5jvyxTKYXKa/b9Sf5HaNmfu8qbWbaaonJwjQ5n875BIA4/K1QThhY9GoeYpgwPzXFL0PL3ywV51Feq3AAAAA=="
+}
