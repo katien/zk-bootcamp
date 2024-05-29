@@ -3,10 +3,11 @@ import { useState, useEffect } from "react";
 import circuit from "../../noir_circuit/target/noir_circuit.json";
 import { BarretenbergBackend } from "@noir-lang/backend_barretenberg";
 import { Noir } from "@noir-lang/noir_js";
+import { CompiledCircuit } from "@noir-lang/types";
 
 export default function Page() {
   const [input, setInput] = useState("");
-  const [proof, setProof] = useState<>("");
+  const [proof, setProof] = useState("");
 
   useEffect(() => {
     (async function setup() {
@@ -34,8 +35,8 @@ export default function Page() {
   const handleSubmit = async (e: any) => {
     try {
       e.preventDefault();
-      const backend = new BarretenbergBackend(circuit);
-      const noir = new Noir(circuit, backend);
+      const backend = new BarretenbergBackend(circuit as CompiledCircuit);
+      const noir = new Noir(circuit as CompiledCircuit, backend);
 
       let finalProof = await noir.generateFinalProof({ x: input });
       let hexProof =
